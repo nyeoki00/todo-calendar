@@ -1,0 +1,411 @@
+/* 상단 제목, 작성버튼 */
+/* .class_28 { width: 1280px; height: 60px; left: 0px; top: 0px; position: absolute } */
+.meal_top_box {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .class_29 {  color: black; font-size: 40px; font-family: Noto Sans; font-weight: 500; word-wrap: break-word } */
+.meal_top_title {
+    color: black;
+    font-size: 48px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* .class_30 { width: 200px; height: 60px; left: 1080px; top: 0px; position: absolute } */
+.meal_top_btn_box {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+/* .class_31 { width: 200px; height: 60px;  background: #FFDB21; border-radius: 5px } */
+.meal_top_btn_link {
+    width: 160px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meal_top_btn {
+    width: 144px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .class_34 { width: 36px; height: 36px; } */
+.meal_top_btn_svg_box {
+    width: 27px;
+    height: 27px;
+}
+
+.meal_top_btn_text {
+    font-size: 20px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* 캘린더 스타일 */
+.fc-toolbar-chunk {
+    width: auto;
+    display: flex;
+}
+
+/* 렌더링 전 버튼 색 덮어쓰기(색 변하는 거 방지) */
+.fc-toolbar .btn {
+    color: black ;
+    background: #FFDB21 ;
+    border-color: #FFDB21 ;
+}
+
+/* 테이블의 테두리 스타일을 덮어쓰는 CSS */
+.fc .fc-daygrid,
+.fc .fc-daygrid-day,
+.fc .fc-col-header-cell {
+    border: 1px rgb(195 195 195 / 30%) solid;
+}
+
+/* 이벤트 막대기 스타일 */
+.fc-h-event .fc-event-main {
+     color: #000;
+    background-color: #FFDB21;
+}
+
+.fc-theme-bootstrap5 a:not([href]) {
+    color: inherit;
+    text-decoration: inherit;
+    border: #FFDB21;
+}
+
+.fc-event:hover {
+    cursor: pointer;
+}
+
+/* 월간 버튼 disable 시에도 투명도 100 */
+.fc-dayGridMonth-button.btn.active.disabled {
+    opacity: 1;
+}
+
+/* 모달 */
+.fixed-width-modal .modal-dialog {
+    max-width: 870px;
+    width: 870px;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-header, .modal-footer {
+    border: 0;
+}
+
+.modal_body {
+    align-self: stretch;
+    padding: 30px 44px;
+    background: #F7F7F7;
+    border-radius: 15px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    display: flex;
+}
+
+.modal_header_title {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* 모달 식단표 내용 */
+.modal_meals_box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    gap: 10px 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal_meal_item_box {
+    align-self: stretch;
+    background: #FFF;
+    border-radius: 15px;
+    border: 1px rgb(195 195 195 / 30%) solid;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.modal_meal_title_box {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_meal_title {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.modal_meal_img_box {
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0);
+    border-top: 1px rgb(195 195 195 / 30%) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_meal_img, .meal_img {
+    width: 330px;
+    height: 300px;
+}
+
+.modal_meal_menu_box {
+    width: 100%;
+    min-height: 150px;
+    background: rgba(255, 255, 255, 0);
+    border-top: 1px rgb(195 195 195 / 30%) solid;
+    display: flex;
+    padding: 20px;
+}
+
+.modal_meal_menu {
+    width: 100%;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.modal_meal_detail_footer {
+    justify-content: center;
+}
+
+.modal_btns_box {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    display: inline-flex
+}
+
+.modal_btn_box {
+    width: 144px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_btn_text {
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+/* 등록 페이지 식단 아이템 */
+.meal_form_body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.meal_option_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meal_time_checkbox {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.form-check-input:checked {
+    background-color: #FFDB21;
+    border-color: #FFDB21;
+}
+
+/* datepicker */
+.meal_datepicker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.meal_datepicker_svg_box {
+    width: 30px;
+    height: 30px;
+}
+
+.meal_date_text_input {
+    color: black;
+    font-size: 16px;
+    word-wrap: break-word;
+    width: 150px;
+    height: 38px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.space {
+    width: 323px;
+}
+
+/* 식단 등록 */
+.meals_box_form {
+    min-height: 599px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    gap: 10px 0;
+    justify-content: flex-start;
+}
+
+.meal_item_box_form {
+    align-self: stretch;
+    background: #FFF;
+    border-radius: 15px;
+    border: 1px rgb(195 195 195 / 30%) solid;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* 파일 업로드 */
+.meal_img_svg_box {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meal_img_svg_box:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.meal_input_file {
+    display: none;
+}
+
+.meal_menu_box_form {
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    border-top: 1px rgb(195 195 195 / 30%) solid;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.meal_menu_form {
+    width: 100%;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    word-wrap: break-word;
+    resize: none;
+}
+
+.menu_input_form {
+    display: flex;
+    gap: 20px;
+}
+
+.menu_input_text {
+    height: 40px;
+}
+
+.menu_input_plus {
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    font-size: 30px;
+    color: darkgray;
+}
+
+.menu_input_close {
+    height: 40px;
+    line-height: 35px;
+    padding: 0;
+    font-size: 26px;
+    color: darkgray;
+}
+
+.google-cal {
+    font-weight: 500;
+    text-align: center;
+    /*cursor: default;*/
+}
+
+.google-cal .fc-event-main {
+    background-color: transparent;
+}
+
+.google-cal .fc-event-title.fc-sticky {
+    cursor: default;
+}
+
+#loading-spinner {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: visible;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.spinner {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 10px solid #fdda21;
+    border-top: 10px solid rgb(195 195 195 / 30%);
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+.spinner-text {
+    text-align: center;
+    width: 150px;
+    font-weight: 500;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-cal, .fc-day-other .fc-daygrid-day-events {
+    opacity: 0.3;
+}

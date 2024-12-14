@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo-Calendar</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/summernote-bs5/css/summernote-bs5.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap-5.0.2-dist/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="/vendor/sweetalert2-11.12.3-dist/sweetalert2.min.css" rel="stylesheet">
+    <link href="/css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/todoCalendar/list.css" />
+
+    <script src="/vendor/jquery-3.7.1.min.js"></script>
+<!--    <script src="https://cdn.rawgit.com/aamirafridi/jQuery.Marquee/master/jquery.marquee.min.js"></script>-->
+    <script src="/vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/summernote-bs5/js/summernote-bs5.min.js"></script>
+    <script src="/vendor/summernote-bs5/js/summernote-ko-KR.min.js"></script>
+    <script src="/vendor/sweetalert2-11.12.3-dist/sweetalert2.all.min.js"></script>
+    <script src="/vendor/moment.js"></script>
+    <script src="/vendor/fullcalendar-6.1.15/dist/index.global.min.js"></script>
+    <script src="/vendor/fullcalendar-6.1.15/packages/bootstrap5/index.global.min.js"></script>
+    <script src="/vendor/fullcalendar-6.1.15/packages/google-calendar/index.global.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/todoCalendar/todo.js"></script>
+    <script src="/js/todoCalendar/fullcalendar.js"></script>
+</head>
+
+<body>
+    <div class="container main_container">
+
+        <div class="meal_top_box">
+
+            <div class="meal_top_title">ToDo-Calendar</div>
+
+        </div>
+
+
+        <div class="calendar_box">
+            <div id="loading-spinner">
+                <div class="spinner"></div>
+                <div class="spinner-text">불러오는중...</div>
+            </div>
+            <div id="calendar"></div>
+        </div>
+
+
+        <!-- Modal -->
+<!--        <div class="modal fade fixed-width-modal" id="mealDetail" tabindex="-1" aria-hidden="true">-->
+<!--            <div class="modal-dialog modal-dialog-scrollable" th:if="${detail}">-->
+<!--                <div class="modal-content">-->
+
+<!--                    <div class="modal-header">-->
+<!--                        <h1 class="modal-title modal_header_title" id="mealDetailLabel"></h1>-->
+<!--                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--                    </div>-->
+
+
+<!--                    <div class="modal-body modal_body">-->
+
+<!--                        <div class="modal_meals_box">-->
+
+<!--                            <div class="modal_meal_item_box">-->
+
+<!--                                <div class="modal_meal_title_box">-->
+<!--                                    <div class="modal_meal_title">오전 간식</div>-->
+<!--                                </div>-->
+
+
+<!--                                <div class="modal_meal_img_box">-->
+<!--                                    <img class="modal_meal_img" src="http://via.placeholder.com/330x300">-->
+<!--                                </div>-->
+
+<!--                                <div class="modal_meal_menu_box">-->
+<!--                                    <div class="modal_meal_menu">-->
+<!--                                        요구르트<br>딸기<br>복숭아-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+
+<!--                            <div class="modal_meal_item_box">-->
+
+<!--                                <div class="modal_meal_title_box">-->
+<!--                                    <div class="modal_meal_title">점심</div>-->
+<!--                                </div>-->
+
+
+<!--                                <div class="modal_meal_img_box">-->
+<!--                                    <img class="modal_meal_img" src="http://via.placeholder.com/330x300">-->
+<!--                                </div>-->
+
+<!--                                <div class="modal_meal_menu_box">-->
+<!--                                    <div class="modal_meal_menu">-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+
+<!--                            <div class="modal_meal_item_box">-->
+
+<!--                                <div class="modal_meal_title_box">-->
+<!--                                    <div class="modal_meal_title">오후 간식</div>-->
+<!--                                </div>-->
+
+
+<!--                                <div class="modal_meal_img_box">-->
+<!--                                    <img class="modal_meal_img" src="http://via.placeholder.com/330x300">-->
+<!--                                </div>-->
+
+<!--                                <div class="modal_meal_menu_box">-->
+<!--                                    <div class="modal_meal_menu">-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+
+<!--                        </div>-->
+
+<!--                    </div>-->
+
+
+<!--                    <div class="modal-footer modal_meal_detail_footer">-->
+<!--                        <div class="modal_btns_box">-->
+
+<!--                            <div class="btn btn-ab modal_btn_box">-->
+<!--                                <div class="modal_btn_text" data-bs-dismiss="modal" aria-label="Close">닫기</div>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+    </div>
+</body>
+</html>
